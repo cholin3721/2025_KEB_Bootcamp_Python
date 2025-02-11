@@ -28,7 +28,7 @@ def is_prime(num) -> bool: # 보통 이렇게 명시적으로 써서 가독성�
             return False
 
       return True
-help(abs)  # help 함수의 대한 설명을 출력해주는 함수
+help(abs)  # help 함수의 대한 설명을 출력해주는 함수 처음알았음..
 help(is_prime)  # 내가 만든 함수도 됨 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ 이건 몰랐네 ''' ''' 여기 안에 있는 것들이 출력됨
 
 num = int(input("Input Number : "))
