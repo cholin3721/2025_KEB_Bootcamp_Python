@@ -11,12 +11,16 @@
 # 입력받은 숫자의 구구단
 
 num = int(input("Input Number : "))
-cnt = 0
-for i in range(1, num + 1, 1) :
-      if num % i == 0 :
-            cnt = cnt + 1
+is_prime = True
+if num >= 2 :
+      for i in range(2, num) :
+            if num % i == 0 :
+                  is_prime = False
+                  break
+else :
+      is_prime=False
 
-if cnt == 2 :
+if is_prime :
       print(f"{num} is Prime Number")
 else :
       print(f"{num} is NOT Prime Number")
