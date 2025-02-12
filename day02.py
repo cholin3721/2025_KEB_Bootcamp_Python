@@ -8,6 +8,7 @@ def my_pow(num1, num2) -> float:
     alternate the pow()
     '''
 
+
     result = 1
     for _ in range(num2) :
         result *=  num1

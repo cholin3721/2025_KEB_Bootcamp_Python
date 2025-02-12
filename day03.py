@@ -10,17 +10,24 @@ def my_pow(num1, num2) -> float:
     alternate the pow()
     '''
 
+    if num1 == 0 and num2 < 0 :
+        return "can't divide with 0"
+
     result = 1
 
-
-    i = int(num2)
-    f = num2 - i
+    i = int(abs(num2))
+    f = abs(num2) - i
     # for _ in range(num2) :
     for _ in range(i):
         result *= num1
 
-    if f > 0:
-        result = result * m.exp(f * m.log(num1))
+    if f > 0 :
+        if num1 < 0 :
+            return float('nan')
+        result *= m.exp(f * m.log(num1))
+
+    if num2 < 0 :
+        result = 1 / result
 
     return result
 
@@ -61,4 +68,5 @@ print(my_pow(2, 9))
 print(my_pow(16, 0.5))
 print(my_pow(10, 3))
 print(my_pow(25, 0.5))
+print(my_pow(16, 0.5))
 
