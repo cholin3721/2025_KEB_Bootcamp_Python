@@ -13,7 +13,7 @@ def time_decorator (func):
         return r
     return wrapper
 
-@time_decorator
+# @time_decorator
 def factorial_repetiton(n) -> int:
     result = 1
     for i in range(2, n+1):
@@ -26,6 +26,11 @@ def power(b, e) :
 number = int(input("Input Number : "))
 # s = time.time()
 print(f"{number}! = {factorial_repetiton(number)}")
+f1 = time_decorator(factorial_repetiton)
+print(f1(number))
+print(factorial_repetiton(number))
+
+
 
 power(3,5)
 # e = time.time()
