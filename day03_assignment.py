@@ -1,6 +1,9 @@
+# d_s_p = {"위스키" : ['초콜릿', 50000]}
+# print(d_s_p["위스키"][1])
+
 drinks_foods = ["초콜릿","치즈","삼겹살","양꼬치"]
 drinks = ["위스키", "와인", "소주", "고량주"]
-
+prices = [50000, 30000, 5000, 7500]
 
 import random
 import math
@@ -111,5 +114,5 @@ while True:
         break
 
     else :
-        pass
+        print("올바른 번호를 입력해주세요!")
 
