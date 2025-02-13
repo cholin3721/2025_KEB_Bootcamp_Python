@@ -31,7 +31,7 @@ def make_bill(menu) :
         bill[drinks[menu]] = 1
 
 
-def how_bout_this(drinks, drinks_food, menu):
+def how_bout_this(drinks, drinks_foods, menu):
     print(f'{drinks[menu]} 에는 {drinks_foods[menu]} 이거지 ㅋㅋ')
     print()
     make_bill(menu)
@@ -93,7 +93,7 @@ def modify(drink, food, pick) :
 def add(drink, food) :
     alcohol = input("어떤 술을 추가하실껀가요 ? : ").strip()
     if alcohol in drink :
-        menu = input("이미 술이 존재합니다, 수정하시겠어요? Y/N : ").strip().upper()
+        menu = input("이미 술이 존재합니다, 안주와 가격을 수정하시겠어요? Y/N : ").strip().upper()
         if menu == 'Y' :
             modify(drink, food, drink.index(alcohol))
         else :
