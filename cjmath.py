@@ -27,3 +27,6 @@ def cj_Fibonacci3(n) :
     for i in range(n) :
         a, b = b, b+a
     return a
+
+if __name__ != "__main__" :
+    print("cjmath.py 파일은 실행하였습니다.")
