@@ -17,9 +17,8 @@ def description(func) :
         return result
     return inner_func_descript
 
-
-@calculate_time
 @description
+@calculate_time
 def power_bomb(a, b) -> int :
     """
     :param a: int
@@ -36,6 +35,7 @@ def no_decorate_power_bomb(a , b) -> int :
     """
     return a ** b
 
-# print(power_bomb(3, 3))
-f1 = calculate_time(description(no_decorate_power_bomb))
-print(f1(3, 3))
+print(power_bomb(3, 3))
+# description(calculate_time(power_bomb))
+f1 = description(calculate_time(no_decorate_power_bomb))
+# print(f1(3, 3))
